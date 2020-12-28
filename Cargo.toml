@@ -9,4 +9,4 @@ rocket = "0.4.6"
 
 [dependencies.rocket_contrib]
 version = "0.4.6"
-features = ["handlebars_templates", "tera_templates"]
+features = ["tera_templates"]
