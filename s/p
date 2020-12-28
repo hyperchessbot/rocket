@@ -1,0 +1,7 @@
+cp target/release/rocket .
+
+git add .
+
+git commit -m "$*"
+
+git push github master
