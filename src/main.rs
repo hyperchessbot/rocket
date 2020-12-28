@@ -7,6 +7,11 @@ fn index() -> &'static str {
     "Hello, world!"
 }
 
+use rocket_contrib::serve::StaticFiles;
+
 fn main() {
-    rocket::ignite().mount("/", routes![index]).launch();
+    rocket::ignite()
+		.mount("/", routes![index])
+		.mount("/", StaticFiles::from("."))
+		.launch();
 }
