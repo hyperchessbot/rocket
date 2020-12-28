@@ -1,0 +1,10 @@
+#!/bin/bash
+
+# script for running the server
+
+# copy all *.html to *.html.tera in templates
+for f in templates/*.html; do 
+    cp -- "$f" "$f.tera"
+done
+
+cargo run
